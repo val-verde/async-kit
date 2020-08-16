@@ -10,8 +10,8 @@ let package = Package(
         .library(name: "AsyncKit", targets: ["AsyncKit"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-nio.git", from: "2.10.0"),
-        .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0"),
+        .package(url: "https://github.com/val-verde/swift-nio.git", .branch("val-verde-mainline")),
+        .package(url: "https://github.com/val-verde/swift-log.git", .branch("val-verde-mainline")),
     ],
     targets: [
         .target(name: "AsyncKit", dependencies: [
